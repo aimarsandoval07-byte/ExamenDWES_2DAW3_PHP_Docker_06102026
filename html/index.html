@@ -10,8 +10,46 @@
         <button onclick="location.href='../php/tabla.php?tipo=soldadura'">Soldadura</button>
         <button onclick="location.href='../php/tabla.php?tipo=informatica'">Informática</button>
         <button onclick="location.href='../php/tabla.php?tipo=socio'">Asistencia Sociosanitaria</button>
-        <form action="../php/tabla.php" method="???">
-            <!-- Añade aquí todos los datos que te pido en el enunciado -->
-        <form>
+        
+        <form action="../php/tabla.php" method="post">
+             <label>Nombre:</label>
+             <input type="text" name="nombre" required>
+             
+             <label>Apellidos:</label>
+             <input type="text" name="apellidos" required>
+             
+             <label>Dni:</label>
+             <input type="text" name="dni" required>
+             
+             <label>Fecha de nacimiento:</label>
+             <input type="date" name="f_nac" required>
+             
+             <label>Teléfono:</label>
+             <input type="tel" name="tlf" required>
+             
+             <label>Correo electrónico:</label>
+             <input type="email" name="email" required><br>
+             
+             <label>Profesión estudiada:</label><br>
+             <select name="profesion" required>
+                <option value="soldadura">Soldadura</option>
+                <option value="informatica">Informática</option>
+                <option value="socio">Asistencia Sociosanitaria</option>
+             </select><br>
+             
+             <p>Tipo de jornada:</p>
+             <label>
+                <input type="radio" name="jornadaParcial" value="1"> Jornada parcial
+             </label>
+             <label>
+                <input type="radio" name="jornadaParcial" value="0"> Jornada completa
+             </label><br>
+             
+             <label>Idiomas:</label>
+             <input type="checkbox" name="euskera" value="Euskera"> Euskera
+             <input type="checkbox" name="ingles" value="Inglés"> Inglés<br> 
+
+             <input type="submit" name="enviar" value="Enviar Solicitud"> 
+        </form>
     </body>
 </html>

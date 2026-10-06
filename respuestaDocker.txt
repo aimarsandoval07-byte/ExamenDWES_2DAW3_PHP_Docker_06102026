@@ -1,4 +1,15 @@
 // Responde a la pregunta sobre docker del enunciado
 
+Explica lo mejor posible qué hace cada opción del siguiente comando de docker:
+    docker run -d --name mi_web -p 8080:80 nginx
+
+-"Docker run" permite ejecutar un comando en un contenedor a partir de una imagen. 
+-"-d" Ejecutaria un contenedor en segundo plano.
+-"--name mi_web" asignaria un nombre (el que tu quieras) al contenedor recien creado.
+-"-p 8080:80" Mapea un puerto del host a un puerto dentro del contenedor para permitirla comunicacion hacia el exterior. 
+-"nginx" indica la imagen base a utilizar para construir el contenedor.
+
 
 // Bibiografía
+-PowerPoint de Docker (El primero que subiste: 2. Docker) y diapositiva numero 20
+-https://pabpereza.dev/docs/cursos/docker/como_ejecutar_un_contenedor_en_docker_comando_docker_run_y_opciones
